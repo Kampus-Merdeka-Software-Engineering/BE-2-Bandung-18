@@ -1,0 +1,30 @@
+{
+  "name": "be-2-bandung-18",
+  "version": "1.0.0",
+  "description": "Blissweet Is A Dessert Platform With A Unique Aesthetic Specializing In Creating Delicious Treats To Enhance Your Mood.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kampus-Merdeka-Software-Engineering/BE-2-Bandung-18.git"
+  },
+  "keywords": [
+    "Blissweet"
+  ],
+  "author": "Group 18 Section Bandung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kampus-Merdeka-Software-Engineering/BE-2-Bandung-18/issues"
+  },
+  "homepage": "https://github.com/Kampus-Merdeka-Software-Engineering/BE-2-Bandung-18#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

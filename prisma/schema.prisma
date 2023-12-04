@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// add your model here
+model Menu {
+  id            Int       @id @default(autoincrement())
+  images        String
+  name          String
+  price         Int
+}
+
+model ContactUs {
+  id            Int         @id @default(autoincrement())
+  name          String      
+  message       String      @db.Text //simpan pesan dengan karakter yang panjang
+  createdAt     DateTime    @default(now())
+}
+

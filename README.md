@@ -8,6 +8,7 @@ Copyright © Group 18 Sec-Bdg RevoU. Blissweet
 
 
 simple app for my capstone project using Express.JS and prisma 
+
 Step by step:
 1. Inisiasi project npm `npm init -y`
 2. Update `package.json` dengan menambahkan scripts

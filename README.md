@@ -1,6 +1,11 @@
-# simple app for my capstone project using Express.JS and prisma 
+# BLISSWEET
+Blissweet Is A Dessert Platform With A Unique Aesthetic Specializing In Creating Delicious Treats To Enhance Your Mood.
 
-# Step by step 
+Copyright © Group 18 Sec-Bdg RevoU. Blissweet
+
+
+simple app for my capstone project using Express.JS and prisma 
+Step by step:
 1. Inisiasi project npm `npm init -y`
 2. Update `package.json` dengan menambahkan scripts
 3. Install package yang diperlukan `npm install express mysql2 dotenv cors`

@@ -23,4 +23,4 @@ Step by step:
 12. inisiasi prisma `npx prisma init --datasource-provider mysql`
 13. Lalu akan ada kode tambahan pada file `.env` yaitu `DATABASE_URL` ini diisi sesuai `DATABASE_URL` kita, bisa juga `DATABASE_URL` diisi dari `railway` atau kalo jalanin dari local pakai yang localhost dulu aja `"mysql://johndoe:randompassword@localhost:3306/mydb"`
 14. Definisikan model rencana kita di `schema.prisma`
-15. Synchronization database `npx prisma migrate dev --name init`
+15. Synchronization database `npx prisma migrate init`

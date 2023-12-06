@@ -2,8 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-//import prisma
-const{ prisma } = require ("./config/prisma")
+//import menu routes
+const{ menuRoutes } = require('./routes/menuRoutes')
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,26 +17,10 @@ app.get("/", async (req, res) => {
 });
 
 //menu routes
+app.use("/menuDessertbox", menuRoutes);
 
-//get menu dessert box
-app.get("/menuDessertbox", async (req, res) => {
-	const menu = await prisma.menu.findMany();
-	res.status(200).send(menu);
-});
-
-//get menu dessert box by id
-app.get("/menuDessertbox/:id", async (req, res) => {
-	const menu = await prisma.menu.findUnique({
-		where: {
-			id: parseInt(req.params.id),
-		},
-	});
-	if (!menu) 
-		res.status(404).json({
-		message: "Menu not found",
-	});
-	else res.status(200).json(menu);
-});
+//message routes
+app.use("/messages", messageRoutes);
 
 app.all("*", async (req, res) => {
 	res.json({

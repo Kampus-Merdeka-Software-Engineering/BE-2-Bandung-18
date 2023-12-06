@@ -19,14 +19,14 @@ app.get("/", async (req, res) => {
 //menu routes
 
 //get menu dessert box
-app.get("/menuDesserbox", async (req, res) => {
+app.get("/menuDessertbox", async (req, res) => {
 	const menu = await prisma.menu.findMany();
 	res.status(200).send(menu);
 });
 
 //get menu dessert box by id
-app.get("/menuDesserbox/:id", async (req, res) => {
-	const catalog = await prisma.catalog.findUnique({
+app.get("/menuDessertbox/:id", async (req, res) => {
+	const menu = await prisma.menu.findUnique({
 		where: {
 			id: parseInt(req.params.id),
 		},

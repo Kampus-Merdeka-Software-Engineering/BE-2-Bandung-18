@@ -23,5 +23,5 @@ Documentation:
 14. Definisikan model rencana kita di `schema.prisma`.
 15. Synchronization database `npx prisma migrate init`.
 16. `npx prisma migrate dev` (wajib dilakukan setiap kali ada perubahan di schema.prisma).
-17. Buat folder `config`, didalam ada file `prisma.js` (buat function get and post).
+17. Buat folder `config`, didalamnya ada file `prisma.js` buat koneksiin prisma ke express (di `index.js` buat function get and post).
 

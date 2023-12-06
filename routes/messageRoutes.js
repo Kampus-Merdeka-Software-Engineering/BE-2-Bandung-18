@@ -2,12 +2,6 @@ const express = require("express");
 const messageRoutes = express.Router();
 const { prisma } = require("../config/prisma");
 
-// get all message
-messageRoutes.get("/", async (req, res) => {
-	const messages = await prisma.contactus.findMany();
-	res.status(200).send(messages);
-});
-
 // create new message
 messageRoutes.post("/", async (req, res) => {
 	const { name, message } = req.body;

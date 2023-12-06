@@ -5,8 +5,11 @@ const cors = require("cors");
 //import menu routes
 const{ menuRoutes } = require('./routes/menuRoutes')
 
+//import message routes
+const{ messageRoutes } = require('./routes/messageRoutes')
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());

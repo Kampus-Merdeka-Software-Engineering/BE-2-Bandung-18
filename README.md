@@ -18,7 +18,7 @@ Documentation:
 9. Buatlah satu rute untuk mencoba apakah aplikasi bisa jalan atau tidak.
 10. Gunakan prisma agar kita bisa terhubung dengan database dan melakukan get/post data ke database dengan [prisma] (https://prisma.io).
 11. Install prisma untuk inisiasi project npm yang ingin diintegrasikan npm install -D prisma.
-12. inisiasi prisma npx prisma init --datasource-provider mysql.
+12. Inisiasi prisma npx prisma init --datasource-provider mysql.
 13. Lalu akan ada kode tambahan pada file .env yaitu DATABASE_URL ini diisi sesuai DATABASE_URL kita, bisa juga DATABASE_URL diisi dari railway atau kalo jalanin dari local pakai yang localhost dulu aja "mysql://johndoe:randompassword@localhost:3306/mydb".
 14. Definisikan model rencana kita di schema.prisma.
 15. Synchronization database npx prisma migrate init.
